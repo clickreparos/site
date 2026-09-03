@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Resolve 1 Dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        <!-- HEADER FIXO NO TOPO -->
+        <header>
+            <div class="header-top">
+                <h1 class="header-title">Resolve 1 Dia</h1>
+                <img src="logo.png" alt="Logo" class="header-logo">
+            </div>
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="search-input" placeholder="Busque um serviço..." autocomplete="off">
+                <div id="search-suggestions"></div>
+            </div>
+        </header>
+
+        <!-- TELA 1: CATEGORIAS E SEÇÕES PRINCIPAIS -->
+        <main id="view-categories" class="view active">
+            
+            <!-- SEÇÃO: COMO FUNCIONA -->
+            <section class="how-it-works-card">
+                <h3 class="how-it-works-title">Como Funciona</h3>
+                <div class="how-it-works-body">
+                    <div class="how-it-works-left">
+                        <img src="logo.png" alt="Logo Resolve 1 Dia" class="how-it-works-img">
+                    </div>
+                    
+                    <div class="how-it-works-right">
+                        <div class="step-item">
+                            <div class="step-badge">1</div>
+                            <div class="step-content">
+                                <strong>Selecione</strong> o serviço desejado
+                            </div>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step-item">
+                            <div class="step-badge">2</div>
+                            <div class="step-content">
+                                <strong>Solicite</strong> seu orçamento rápido
+                            </div>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step-item">
+                            <div class="step-badge">3</div>
+                            <div class="step-content">
+                                <strong>Agende</strong> seu serviço e pronto!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CATEGORIAS -->
+            <h2 class="section-subtitle">Selecione o profissional:</h2>
+            <div class="grid" id="categories-grid">
+                <!-- Gerado dinamicamente via JS -->
+            </div>
+
+            <!-- SEÇÃO: ANTES & DEPOIS (CARROSSEL) -->
+            <section class="portfolio-section">
+                <h2 class="section-subtitle">Antes & Depois dos Serviços</h2>
+                <div class="carousel-container">
+                    
+                    <!-- ITEM 1: FOTO -->
+                    <div class="carousel-card">
+                        <div class="media-container">
+                            <span class="badge-tag">Foto</span>
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500&q=80" alt="Troca de Torneira">
+                        </div>
+                        <div class="card-info">
+                            <h4>Troca de Torneira</h4>
+                            <p>Hidráulico • Sem vazamentos</p>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 2: FOTO -->
+                    <div class="carousel-card">
+                        <div class="media-container">
+                            <span class="badge-tag">Foto</span>
+                            <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=500&q=80" alt="Pintura de Parede">
+                        </div>
+                        <div class="card-info">
+                            <h4>Pintura de Sala</h4>
+                            <p>Pintor • Acabamento perfeito</p>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 3: VÍDEO -->
+                    <div class="carousel-card">
+                        <div class="media-container">
+                            <span class="badge-tag video-tag">Vídeo 🎥</span>
+                            <video controls poster="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=500&q=80" preload="metadata">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos.
+                            </video>
+                        </div>
+                        <div class="card-info">
+                            <h4>Roçada de Terreno</h4>
+                            <p>Roçador • Limpeza completa</p>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 4: FOTO -->
+                    <div class="carousel-card">
+                        <div class="media-container">
+                            <span class="badge-tag">Foto</span>
+                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=500&q=80" alt="Limpeza de Azulejo">
+                        </div>
+                        <div class="card-info">
+                            <h4>Desengorduramento</h4>
+                            <p>Limpeza • Brilho renovado</p>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 5: VÍDEO -->
+                    <div class="carousel-card">
+                        <div class="media-container">
+                            <span class="badge-tag video-tag">Vídeo 🎥</span>
+                            <video controls poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80" preload="metadata">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos.
+                            </video>
+                        </div>
+                        <div class="card-info">
+                            <h4>Cimento Queimado</h4>
+                            <p>Pintor • Aplicação moderna</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SEÇÃO: DEPOIMENTOS -->
+            <section class="testimonials-section">
+                <h2 class="section-subtitle">O que dizem nossos clientes</h2>
+                <div class="carousel-container">
+                    
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Serviço rápido e impecável! O encanador resolveu o vazamento da pia em menos de 1 hora. Recomendo muito!"</p>
+                        <h4 class="testimonial-author">- Maria Clara Silva</h4>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Contratei para trocar a fiação e as tomadas. O eletricista foi muito educado, limpo e profissional."</p>
+                        <h4 class="testimonial-author">- Roberto Mendes</h4>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Minha parede com cimento queimado ficou simplesmente perfeita! Deu outra cara para a minha sala."</p>
+                        <h4 class="testimonial-author">- Fernanda Souza</h4>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Precisava limpar o terreno urgente antes do fim de semana. O roçador chegou no horário e deixou tudo impecável."</p>
+                        <h4 class="testimonial-author">- Carlos Eduardo</h4>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Limpeza super detalhada! Meus azulejos da cozinha ficaram parecendo novos depois do desengorduramento."</p>
+                        <h4 class="testimonial-author">- Juliana Costa</h4>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="app-footer">
+                Feito com <span class="heart">❤️</span> em Itaboraí
+            </footer>
+
+        </main>
+
+        <!-- TELA 2: LISTA DE SERVIÇOS DA CATEGORIA -->
+        <main id="view-service-list" class="view">
+            <div class="view-header">
+                <h2 class="view-title" id="list-category-title">Categoria</h2>
+                <button class="close-btn" id="btn-close-list" aria-label="Fechar">✕</button>
+            </div>
+            <ul class="service-list" id="services-ul">
+                <!-- Gerado dinamicamente via JS -->
+            </ul>
+        </main>
+
+        <!-- TELA 3: DETALHE DO SERVIÇO -->
+        <main id="view-service-detail" class="view">
+            <div class="detail-card">
+                <button class="close-btn" id="btn-close-detail" aria-label="Fechar">✕</button>
+                <div class="detail-category" id="detail-category">Categoria</div>
+                <h1 class="detail-title" id="detail-title">Nome do Serviço</h1>
+                <p class="detail-description" id="detail-description">Explicação do serviço...</p>
+                
+                <button id="btn-open-form" class="btn-primary">
+                    📝 Preencher Dados para Orçamento
+                </button>
+            </div>
+        </main>
+
+        <!-- MODAL: FORMULÁRIO DINÂMICO DE ORÇAMENTO -->
+        <div id="modal-quote" class="modal-overlay">
+            <div class="modal-card">
+                <button class="close-btn modal-close" id="btn-close-modal" aria-label="Fechar">✕</button>
+                <h3 class="modal-title">Solicitar Orçamento</h3>
+                <p class="modal-subtitle" id="modal-service-subtitle">Serviço selecionado</p>
+                
+                <form id="form-quote">
+                    <div class="form-group">
+                        <label for="client-name">Seu Nome *</label>
+                        <input type="text" id="client-name" placeholder="Ex: João da Silva" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="client-address">Endereço (Rua e Nº) *</label>
+                        <input type="text" id="client-address" placeholder="Ex: Rua das Flores, 123" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="client-bairro">Bairro *</label>
+                        <input type="text" id="client-bairro" placeholder="Ex: Centro" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="client-notes">Observações / Detalhes do Serviço</label>
+                        <textarea id="client-notes" rows="3" placeholder="Ex: Preferência para atendimento no sábado de manhã, vazamento forte..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-whatsapp">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                        </svg>
+                        Enviar pelo WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
