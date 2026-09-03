@@ -20,6 +20,17 @@ const categoriesData = [
 
 // BANCO DE DADOS DE SERVIÇOS
 const servicesData = [
+    // outros
+    {
+        id: "srv-outros-000",
+        categoryId: "cat-outros",
+        title: "Outros",
+        desc: "Outro tipo de serviço, não listado. Favor descrever.",
+        image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80",
+        keywords: ["outros", "outro", "zap", "whatsapp", "contato"]
+    },
+    
+    
     // --- HIDRÁULICO ---
     {
         id: "srv-hid-001",
