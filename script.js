@@ -1,6 +1,6 @@
 // CONFIGURAÇÕES GERAIS
 const CONFIG = {
-    whatsappNumber: "5521999999999", // Atualize com o WhatsApp real (DDD 21 - Itaboraí)
+    whatsappNumber: "5521967358108", // Atualize com o WhatsApp real (DDD 21 - Itaboraí)
     minSearchLength: 2
 };
 
