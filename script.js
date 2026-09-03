@@ -15,7 +15,7 @@ const categoriesData = [
     { id: "cat-marcenaria", name: "Marcenaria & Chaveiro", icon: "🚪" },
     { id: "cat-instalacoes", name: "Montagens & Fixações", icon: "🛠️" },
     { id: "cat-ti", name: "Redes & Tecnologia", icon: "📶" }
-    { id: "cat-ti", name: "Outros", icon: "🗣️" }
+    { id: "cat-outros", name: "Outros", icon: "🗣️" }
 ];
 
 // BANCO DE DADOS DE SERVIÇOS
