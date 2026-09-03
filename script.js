@@ -14,7 +14,7 @@ const categoriesData = [
     { id: "cat-rocador", name: "Roçador & Jardinagem", icon: "🌿" },
     { id: "cat-marcenaria", name: "Marcenaria & Chaveiro", icon: "🚪" },
     { id: "cat-instalacoes", name: "Montagens & Fixações", icon: "🛠️" },
-    { id: "cat-ti", name: "Redes & Tecnologia", icon: "📶" }
+    { id: "cat-ti", name: "Redes & Tecnologia", icon: "📶" },
     { id: "cat-outros", name: "Outros", icon: "🗣️" }
 ];
 
