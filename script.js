@@ -20,12 +20,12 @@ const CONFIG = {
     justify-content: center;
     text-decoration: none;
     transition: transform 0.2s ease, background-color 0.2s ease;
-  }
+  };
 
   .whatsapp-float:hover {
     transform: scale(1.1);
     background-color: #20ba5a;
-  }
+  };
 
 
 // BANCO DE DADOS DE CATEGORIAS
