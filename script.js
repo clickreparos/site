@@ -3,31 +3,6 @@ const CONFIG = {
     whatsappNumber: "5521967358108", // Atualize com o WhatsApp real (DDD 21 - Itaboraí)
     minSearchLength: 2
 };
-// botao flutuante whatsapp 
-  .whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 25px;
-    right: 25px;
-    background-color: #25d366;
-    color: #ffffff;
-    border-radius: 50px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-  };
-
-  .whatsapp-float:hover {
-    transform: scale(1.1);
-    background-color: #20ba5a;
-  };
-
-
 // BANCO DE DADOS DE CATEGORIAS
 const categoriesData = [
     { id: "cat-hidraulico", name: "Hidráulico", icon: "💧" },
