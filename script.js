@@ -1913,6 +1913,9 @@ function closeModalForm() {
 }
 
 // MONTAGEM DA MENSAGEM DO WHATSAPP
+
+// teste de botao dupla função 
+
 function handleFormSubmit(e) {
     e.preventDefault();
 
@@ -1941,11 +1944,20 @@ function handleFormSubmit(e) {
 
     const whatsappUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
     
-    // Abre o WhatsApp e fecha o modal
+    // 1. Abre o WhatsApp em uma nova aba
     window.open(whatsappUrl, '_blank');
+    
+    // 2. Fecha o modal e reseta o form (opcional, já que a página vai mudar)
     closeModalForm();
     DOM.formQuote.reset();
+
+    // 3. Redireciona a aba original para a página de obrigado (Trackeamento)
+    window.location.href = "obrigado.html"; 
 }
+
+
+
+
 
 // PESQUISA
 function handleSearch(e) {
